@@ -178,15 +178,18 @@
           <fieldset class="order-form__group form-group form-group--contacts">
             <legend class="form-group__title">Тел</legend>
             <input class="form-group__input" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <label class="form-group__label visually-hidden" for="tel">Ваш телефон</label>
           </fieldset>
           <fieldset class="order-form__group form-group">
             <legend class="form-group__title">E-mail</legend>
             <input class="form-group__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+            <label class="form-group__label visually-hidden" for="tel">Ваш телефон</label>
           </fieldset>
         </div>
         <fieldset class="order-form__group form-group form-group--other">
           <legend class="form-group__title">Доп</legend>
-          <textarea class="form-group__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="form-group__textarea" name="other" id="other" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <label class="form-group__label visually-hidden" for="other">Дополнительные пожелания к заказу</label>
         </fieldset>
         <small class="order-form__info">*Поля обязательны для заполнения</small>
         <button class="order-form__button button" type="submit">Отправить заказ</button>
