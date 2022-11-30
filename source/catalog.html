@@ -69,13 +69,15 @@
   <main>
     <section class="catalog">
       <div class="catalog__wrapper main-title-wrapper">
-        <h1 class="main-title-wrapper__title main-title">Каталог товаров</h2>
+        <h1 class="main-title-wrapper__title main-title">Каталог товаров</h1>
       </div>
       <ul class="catalog__list products-list">
         <li class="products-list__item catalog-item">
-          <img class="catalog-item__image catalog-item__image--mobile" src="img/img-catalog/product-bunny.jpg"
-            width="260" height="195" alt="Зайчик-попрыгайчик">
-          <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+          <a class="products-list__link link">
+            <img class="catalog-item__image catalog-item__image--mobile" src="img/img-catalog/product-bunny.jpg"
+              width="260" height="195" alt="Зайчик-попрыгайчик">
+            <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+          </a>
           <p class="catalog-item__details">Рост 30 см, вес 200 г</p>
           <div class="catalog-item__buy-wrapper buy-wrapper">
             <b class="buy-wrapper__price">1 200 руб.</b>
@@ -83,11 +85,14 @@
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </div>
+
         </li>
         <li class="products-list__item catalog-item">
-          <img class="catalog-item__image catalog-item__image--mobile" src="img/img-catalog/laundry-basket.jpg"
-            width="260" height="195" alt="Корзинка для белья">
-          <h2 class="catalog-item__title">Корзинка для белья</h2>
+          <a class="products-list__link link">
+            <img class="catalog-item__image catalog-item__image--mobile" src="img/img-catalog/laundry-basket.jpg"
+              width="260" height="195" alt="Корзинка для белья">
+            <h2 class="catalog-item__title">Корзинка для белья</h2>
+          </a>
           <p class="catalog-item__details">Диаметр 15 см, высота 10 см</p>
           <div class="catalog-item__buy-wrapper buy-wrapper">
             <b class="buy-wrapper__price">690 руб.</b>
@@ -95,18 +100,22 @@
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </div>
+
         </li>
         <li class="products-list__item catalog-item">
-          <img class="catalog-item__image catalog-item__image--mobile" src="img/img-catalog/toy-basket.jpg" width="260"
-            height="195" alt="Большая корзинка для игрушек">
-          <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
-          <p class="catalog-item__details">Диаметр 30 см, высота 30 см</p>
-          <div class="catalog-item__buy-wrapper buy-wrapper">
-            <b class="buy-wrapper__price">1 500 руб.</b>
-            <button class="buy-wrapper__button button button--card">
-              <span class="visually-hidden">Добавить в корзину.</span>
-            </button>
-          </div>
+          <a class="products-list__link link">
+            <img class="catalog-item__image catalog-item__image--mobile" src="img/img-catalog/toy-basket.jpg"
+              width="260" height="195" alt="Большая корзинка для игрушек">
+            <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+          </a>
+            <p class="catalog-item__details">Диаметр 30 см, высота 30 см</p>
+            <div class="catalog-item__buy-wrapper buy-wrapper">
+              <b class="buy-wrapper__price">1 500 руб.</b>
+              <button class="buy-wrapper__button button button--card">
+                <span class="visually-hidden">Добавить в корзину.</span>
+              </button>
+            </div>
+
         </li>
       </ul>
       <div class="video-wrapper">
@@ -114,11 +123,11 @@
         <div class="video-controls">
           <img class="video-controls__clip" src="img/img-catalog/video-mobile.jpg" width="260" height="150"
             alt="Производство наших изделий.">
-          <button class="video-controls__button button--play"></button>
+          <button class="video-controls__button button button--play"></button>
         </div>
         <p class="video-wrapper__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
           том, как появляются наши товары.</p>
-        <a class="video-wrapper__button button" href="#">СДелать заказ</a>
+        <a class="video-wrapper__button button" href="#">Сделать заказ</a>
       </div>
     </section>
   </main>
@@ -185,7 +194,7 @@
         </a>
       </li>
     </ul>
-    <a class="page-footer__copyright copyright-link" href="https://htmlacademy.ru">
+    <a class="page-footer__copyright copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="copyright-link__text">Разработано</span>
       <svg class="copyright-link__image" width="27" height="34" viewBox="0 0 27 34" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -193,7 +202,7 @@
           d="M13.6506 0H13.5502L0 1.39589V26.0235L13.5502 34L27 26.0235V1.39589L13.6506 0ZM25.0929 12.0645L13.5502 5.28446V5.18475H13.4498L13.3494 5.08504V5.18475L1.90706 12.0645V3.09091L13.4498 1.89443L25.0929 3.09091V12.0645ZM13.4498 6.78006L24.9926 13.4604L20.4758 16.0528L13.3494 11.8651V13.261L19.2714 16.7507L18.368 17.2493L13.3494 14.2581V15.654L17.1636 17.9472L16.3606 18.4457L13.3494 16.651V18.0469L15.2565 19.1437L13.4498 20.2405L2.00744 13.5601L13.4498 6.78006ZM1.90706 15.0557L13.3494 21.8358V22.8328L5.42007 18.1466V19.5425L13.4498 24.3284V25.4252L5.42007 20.739V22.1349L13.4498 26.9208L21.5799 22.0352V16.8504L24.9926 14.8563V24.827L13.4498 31.7067L1.90706 24.9267V15.0557Z"
           fill="#63D1BB" />
       </svg>
-      <span class="visually-hidden">HTML Acadeny</span>
+      <span class="visually-hidden">HTML Academy.</span>
     </a>
   </footer>
   <dialog class="modal modal--open">
@@ -218,7 +227,7 @@
             <li class="size-options-list__item size-item">
               <label class="size-item__control size-control">
                 <input class="size-control__input visually-hidden" type="radio" name="size" id="L" value="L">
-                <span class="size-control__mark">M</span>
+                <span class="size-control__mark">L</span>
               </label>
             </li>
           </ul>
