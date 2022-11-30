@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Academy: Мишка</title>
+  <title>Каталог</title>
 </head>
 
 <body class="page__body">
+
   <header class="page-header">
     <a class="page-header__logo logo">
       <img class="logo__image logo__image--mobile" src="img/main-logo-mobile.svg" width="86" height="35"
@@ -16,7 +17,7 @@
     </a>
     <nav class="page-header__navigation header-navigation">
       <button class="header-navigation__toggle" type="button">
-        <span class="visually-hidden">Показать меню.</span>
+        <span class="visually-hidden">Показать меню</span>
       </button>
       <ul class="header-navigation__list site-navigation">
         <li class="site-navigation__item">
@@ -65,88 +66,69 @@
     </nav>
   </header>
 
-  <main class="page-main">
-    <h1 class="visually-hidden">Интернет-магазин "Мишка".</h1>
-    <section class="intro">
-      <div class="intro__wrapper main-title-wrapper">
-        <h2 class="main-title-wrapper__title main-title">Милые штуки ручной работы для дома</h2>
+  <main>
+    <section class="catalog">
+      <div class="catalog__wrapper main-title-wrapper">
+        <h1 class="main-title-wrapper__title main-title">Каталог товаров</h1>
       </div>
-      <ul class="intro__product-list product-list">
-        <li class="product-list__item">
-          <a class="product-list__link link">Предметы интерьера</a>
-          </li>
-        <li class="product-list__item">
-          <a class="product-list__link link">Детские игрушки</a>
+      <ul class="catalog__list products-list">
+        <li class="products-list__item catalog-item">
+          <a class="products-list__link link">
+            <img class="catalog-item__image catalog-item__image--mobile" src="img/img-catalog/product-bunny.jpg"
+              width="260" height="195" alt="Зайчик-попрыгайчик">
+            <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+          </a>
+          <p class="catalog-item__details">Рост 30 см, вес 200 г</p>
+          <div class="catalog-item__buy-wrapper buy-wrapper">
+            <b class="buy-wrapper__price">1 200 руб.</b>
+            <button class="buy-wrapper__button button button--card">
+              <span class="visually-hidden">Добавить в корзину.</span>
+            </button>
+          </div>
+
+        </li>
+        <li class="products-list__item catalog-item">
+          <a class="products-list__link link">
+            <img class="catalog-item__image catalog-item__image--mobile" src="img/img-catalog/laundry-basket.jpg"
+              width="260" height="195" alt="Корзинка для белья">
+            <h2 class="catalog-item__title">Корзинка для белья</h2>
+          </a>
+          <p class="catalog-item__details">Диаметр 15 см, высота 10 см</p>
+          <div class="catalog-item__buy-wrapper buy-wrapper">
+            <b class="buy-wrapper__price">690 руб.</b>
+            <button class="buy-wrapper__button button button--card">
+              <span class="visually-hidden">Добавить в корзину.</span>
+            </button>
+          </div>
+
+        </li>
+        <li class="products-list__item catalog-item">
+          <a class="products-list__link link">
+            <img class="catalog-item__image catalog-item__image--mobile" src="img/img-catalog/toy-basket.jpg"
+              width="260" height="195" alt="Большая корзинка для игрушек">
+            <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+          </a>
+            <p class="catalog-item__details">Диаметр 30 см, высота 30 см</p>
+            <div class="catalog-item__buy-wrapper buy-wrapper">
+              <b class="buy-wrapper__price">1 500 руб.</b>
+              <button class="buy-wrapper__button button button--card">
+                <span class="visually-hidden">Добавить в корзину.</span>
+              </button>
+            </div>
+
         </li>
       </ul>
-    </section>
-    <section class="promo">
-      <div class="promo__wrapper">
-        <h2 class="promo__title title">Вязаные корзинки</h2>
-        <b class="promo__details">Товар недели</b>
-        <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести
-          расцветках и трёх размерах.</p>
-        <dl class="promo__details product-details">
-          <dt class="product-details__title">Цвет:</dt>
-          <dd class="product-details__parameter">Тиффани/серый</dd>
-          <dt class="product-details__title">Диаметр:</dt>
-          <dd class="product-details__parapeter">25 см</dd>
-          <dt class="product-details__title">Высота:</dt>
-          <dd class="product-details__parameter">15 см</dd>
-        </dl>
-        <img class="promo__illustration" src="img/img-index/knitted-bag.jpg" width="260" height="315"
-          alt="Вязаные корзинки">
-        <b class="promo__price">Цена: 990 руб.</b>
-        <a class="promo__button button button--primary" href="#">Заказать</a>
+      <div class="video-wrapper">
+        <h2 class="video-wrapper__title">Процесс производства</h2>
+        <div class="video-controls">
+          <img class="video-controls__clip" src="img/img-catalog/video-mobile.jpg" width="260" height="150"
+            alt="Производство наших изделий.">
+          <button class="video-controls__button button button--play"></button>
+        </div>
+        <p class="video-wrapper__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
+          том, как появляются наши товары.</p>
+        <a class="video-wrapper__button button" href="#">Сделать заказ</a>
       </div>
-    </section>
-    <section class="advantages">
-      <h2 class="advantages__title title">Коротко о нас:</h2>
-      <ul class="advantages__list advantages-list">
-        <li class="advantages-list__item advantage advantage--material">Экологически чистые материалы</li>
-        <li class="advantages-list__item advantage advantage--style">Скандинавский стиль по российской цене</li>
-        <li class="advantages-list__item advantage advantage--likes">Увеличивает лайки на фотографиях</li>
-        <li class="advantages-list__item advantage advantage--handmade">Связано вручную с любовью и умилением</li>
-        <li class="advantages-list__item advantage advantage--native">Поддержка отечественного производителя</li>
-        <li class="advantages-list__item advantage advantage--package">Поставляется в подарочной упаковке</li>
-      </ul>
-    </section>
-    <section class="feedback">
-      <h2 class="feedback__title title">Отзывы</h2>
-      <div class="feedback__wrapper">
-        <blockquote class="feedback__item">
-          <p class="feedback__text">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-            инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
-            стильными, а также набирают больше лайков!
-          </p>
-          <cite class="feedback__author-info author-info">
-            <span class="author-info__name">Анастасия Красильникова</span>
-            <a class="author-info__link link" href="#">@misssssiskras</a>
-          </cite>
-        </blockquote>
-      </div>
-      <div class="feedback__slider feedback-slider">
-        <button class="feedback-slider__button button button--prev" type="button"></button>
-        <button class="feedback-slider__button button button--next" type="button"></button>
-      </div>
-      <a class="feedback-button button" href="#">Написать</a>
-    </section>
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="contacts__title title">Контакты</h2>
-        <span class="contacts__text">E-mail:</span>
-        <a class="contacts__link link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        <span class="contacts__text">Адрес:</span>
-        <address class="contacts__address address"> г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
-        </address>
-      </div>
-      <iframe class="contacts__map map map--mobile"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669638020070!5m2!1sru!2sru"
-        width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-      <a class="contacts__button button" href="#">Напишите нам</a>
     </section>
   </main>
 
@@ -223,7 +205,6 @@
       <span class="visually-hidden">HTML Academy.</span>
     </a>
   </footer>
-
   <dialog class="modal modal--open">
     <div class="modal__wrapper">
       <section class="modal__content">
@@ -234,7 +215,7 @@
             <li class="size-options-list__item size-item">
               <label class="size-item__control size-control">
                 <input class="size-control__input visually-hidden" type="radio" name="size" id="S" value="S" checked>
-                <span class="size-control__mark">S</span>
+                <span class="size-control__mark size-control__mark--checked">S</span>
               </label>
             </li>
             <li class="size-options-list__item size-item">
