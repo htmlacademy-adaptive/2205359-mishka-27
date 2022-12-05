@@ -274,33 +274,33 @@
     </a>
   </footer>
 
-  <dialog class="modal modal--open">
+  <dialog class="modal">
     <div class="modal__wrapper">
       <section class="modal__content">
-        <h2 class="modal__title">Добавить в корзину</h2>
+        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
         <p class="modal__description">Выберите размер:</p>
         <form class="modal__form modal-form" action="https://echo.htmlacademy.ru/" method="post">
-          <ul class="modal-form__options size-options-list">
+          <ul class="modal-form__options size-options-list list">
             <li class="size-options-list__item size-item">
-              <label class="size-item__control size-control">
-                <input class="size-control__input visually-hidden" type="radio" name="size" id="S" value="S" checked>
-                <span class="size-control__mark">S</span>
+              <label class="size-item__control">
+                <input class="size-item__control-input visually-hidden" type="radio" name="size" id="S" value="S" checked>
+                <span class="size-item__control-mark">S</span>
               </label>
             </li>
             <li class="size-options-list__item size-item">
-              <label class="size-item__control size-control">
-                <input class="size-control__input visually-hidden" type="radio" name="size" id="M" value="M">
-                <span class="size-control__mark">M</span>
+              <label class="size-item__control">
+                <input class="size-item__control-input visually-hidden" type="radio" name="size" id="M" value="M">
+                <span class="size-item__control-mark">M</span>
               </label>
             </li>
             <li class="size-options-list__item size-item">
-              <label class="size-item__control size-control">
-                <input class="size-control__input visually-hidden" type="radio" name="size" id="L" value="L">
-                <span class="size-control__mark">L</span>
+              <label class="size-item__control">
+                <input class="size-item__control-input visually-hidden" type="radio" name="size" id="L" value="L">
+                <span class="size-item__control-mark">L</span>
               </label>
             </li>
           </ul>
-          <button class="modal-form__button button" type="submit">Добавить</button>
+          <button class="modal-form__button button button--modal" type="submit">Добавить</button>
         </form>
       </section>
     </div>

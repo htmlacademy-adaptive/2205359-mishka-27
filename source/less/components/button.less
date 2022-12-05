@@ -5,20 +5,26 @@
   box-sizing: border-box;
 
   background-color: #ffffff;
+  border: none;
 
   cursor: pointer;
 
-  &--primary {
+  &--primary,
+  &--modal {
     display: block;
     width: 260px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &--primary {
     padding-top: 16px;
     padding-bottom: 16px;
 
-    font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    text-transform: uppercase;
-    text-align: center;
 
     border: 2px solid #444444;
 
@@ -33,7 +39,15 @@
     }
   }
 
-  &--slider {
-    border: none;
+  &--modal {
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    font-size: 17px;
+    line-height: 16px;
+    color: #ffffff;
+
+    background-color: #63d1bb;
   }
+
 }
