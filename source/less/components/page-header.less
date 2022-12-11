@@ -1,5 +1,13 @@
 .page-header {
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 }
 
 .page-header__wrapper {
@@ -12,6 +20,28 @@
   padding: 22px 31px;
 
   box-shadow: 0 1px 0 #ececec;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+
+    justify-content: flex-start;
+    padding: 0;
+    padding-top: 22px;
+    margin-left: 50px;
+    width: 42%;
+    height: 45px;
+
+    box-shadow: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 50%;
+    right: 50%;
+
+    display: block;
+    width: 149px;
+    margin: 0;
+  }
 }
 
 .page-header__logo {
@@ -36,6 +66,10 @@
 
   &--closed {
     background-image: url("../img/header-icons/header-toggle-button.svg");
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 

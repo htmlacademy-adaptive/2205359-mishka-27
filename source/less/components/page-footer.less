@@ -3,13 +3,28 @@
   padding-bottom: 23px;
 
   background-color: #f1f1f1;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 51px 50px 58px;
+  }
 }
 
 .page-footer__social-list {
   margin-bottom: 58px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .page-footer__copyright {
   margin: 0 auto;
   width: fit-content;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
