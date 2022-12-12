@@ -1,9 +1,19 @@
 .products-list {
-  gap: 30px;
-}
-
-.products-list__link {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    gap: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 52px;
+    width: auto;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }

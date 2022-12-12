@@ -1,8 +1,11 @@
-.catalog__list {
+.catalog {
   padding: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 67px 50px;
+  }
+}
+
+.catalog__list {
   margin: auto;
-  width: min-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
