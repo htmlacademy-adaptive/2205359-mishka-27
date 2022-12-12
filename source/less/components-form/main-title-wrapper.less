@@ -3,4 +3,36 @@
   padding-bottom: 73px;
 
   background-color: #f1f1f1;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    padding-top: 101px;
+    padding-bottom: 90px;
+
+    &::after {
+      position: absolute;
+      top: 90%;
+      right: 0;
+      content: "";
+
+      width: 100%;
+      min-width: 768px;
+      height: 24px;
+
+      background-image: url("../img/img-index/zigzag.svg");
+      background-position: center;
+      background-size: contain;
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 102px;
+    padding-bottom: 95px;
+
+    &::after {
+      height: 34px;
+    }
+  }
 }
