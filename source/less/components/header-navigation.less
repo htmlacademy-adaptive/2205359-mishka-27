@@ -177,6 +177,8 @@
 }
 
 .header-navigation__link {
+  position: relative;
+
   width: 100%;
   height: 100%;
   display: flex;
@@ -188,6 +190,14 @@
 }
 
 .header-navigation__icon {
+  position: absolute;
+  left: -44px;
+  top: 2px;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+  }
+
   &--cart {
     @media (min-width: @tablet-width) {
       margin-left: 33px;
