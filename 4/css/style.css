@@ -153,6 +153,9 @@
 .page-header__toggle--closed {
   background-image: url("../img/header-icons/header-toggle-button.svg");
 }
+.page-header__toggle--nojs {
+  display: none;
+}
 @media (min-width: 768px) {
   .page-header__toggle {
     display: none;
@@ -171,6 +174,10 @@
   font-size: 17px;
   line-height: 24px;
   background-color: #ffffff;
+}
+.header-navigation--nojs {
+  position: static;
+  display: block;
 }
 @media (min-width: 768px) {
   .header-navigation {
@@ -316,6 +323,7 @@
   }
 }
 .header-navigation__link {
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -324,6 +332,16 @@
   .header-navigation__link {
     justify-content: center;
     align-items: center;
+  }
+}
+.header-navigation__icon {
+  position: absolute;
+  left: -44px;
+  top: 2px;
+}
+@media (min-width: 768px) {
+  .header-navigation__icon {
+    position: static;
   }
 }
 @media (min-width: 768px) {
@@ -1437,7 +1455,7 @@
   }
 }
 .form-group__title::after {
-  width: 200px;
+  width: calc(100% - 59px);
   height: 1px;
   margin-left: auto;
   background-color: #63d1bb;
@@ -1458,7 +1476,7 @@
 }
 @media (min-width: 768px) {
   .form-group__list {
-    font-style: 19px;
+    font-size: 19px;
     line-height: 19px;
   }
 }
@@ -1662,11 +1680,11 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  width: 260px;
 }
 @media (min-width: 768px) {
   .products-list {
     gap: 54px;
+    width: 668px;
   }
 }
 @media (min-width: 1150px) {
@@ -1687,7 +1705,7 @@
 @media (min-width: 768px) {
   .catalog-item {
     flex-direction: row;
-    width: 668px;
+    width: calc(100% - 100px);
     gap: 34px;
   }
 }
@@ -1728,7 +1746,7 @@
 @media (min-width: 768px) {
   .catalog-item__title {
     min-height: 48px;
-    font-style: 20px;
+    font-size: 20px;
     line-height: 24px;
   }
 }
@@ -1743,7 +1761,7 @@
 @media (min-width: 768px) {
   .catalog-item__details {
     margin-bottom: 197px;
-    font-style: 15px;
+    font-size: 15px;
   }
 }
 @media (min-width: 1150px) {
@@ -1812,6 +1830,8 @@
 }
 @media (min-width: 1150px) {
   .production__wrapper {
+    width: -moz-fit-content;
+    width: fit-content;
     display: grid;
     grid-template-columns: 682px 288px;
     grid-template-rows: repeat(3, max-content);
