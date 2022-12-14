@@ -6,6 +6,16 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+    width: fit-content;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .advantages-list__item {

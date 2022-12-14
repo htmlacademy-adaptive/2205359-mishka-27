@@ -5,16 +5,31 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 61px;
+
+    font-size: 17px;
+  }
 }
 
 .review__info {
   font-style: normal;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .review__author {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .review__link {

@@ -7,6 +7,12 @@
   justify-content: space-between;
 
   box-shadow: 0 0 0 1px #ececec;
+
+  @media (min-width: @tablet-width) {
+    width: 137px;
+    margin-right: 19px;
+    box-shadow: none;
+  }
 }
 
 .feedback-slider__button {
@@ -15,15 +21,28 @@
   padding-top: 13px;
   padding-bottom: 13px;
 
+  @media (min-width: @tablet-width) {
+    width: fit-content;
+  }
+
   &--prev {
     padding-left: 42px;
     padding-right: 42px;
     border-right: 1px solid #ececec;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+      padding: 0;
+    }
   }
 
   &--next {
     padding-left: 37px;
     padding-right: 42px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+    }
   }
 
   &:hover {

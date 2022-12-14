@@ -3,10 +3,37 @@
 
   background: url("../img/img-index/intro-background.jpg") no-repeat center -22px;
   background-size: 568px 373px;
+  background-color: #f9f9f9;
+
+  @media (min-width: @tablet-width) {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: url("../img/img-index/intro-desktop.jpg") no-repeat center top;
+    background-color: #f9f9f9;
+    background-size: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 746px;
+    background-size: contain;
+  }
 }
 
 .intro__wrapper {
   padding: 73px 30px 120px 30px;
   display: flex;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 155px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 158px;
+  }
 }
