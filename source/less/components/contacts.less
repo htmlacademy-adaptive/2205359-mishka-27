@@ -13,7 +13,7 @@
     padding-right: 50px;
     padding-bottom: 105px;
     display: grid;
-    grid-template-columns: 1fr 527px;
+    grid-template-columns: 39% 1fr;
     column-gap: 23px;
   }
 }
@@ -89,7 +89,17 @@
     width: 100%;
     height: 1px;
     content: "";
-    background-color: #62d1ba;
+    background-color: #46c1ae;
+  }
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.1;
+    }
   }
 }
 
@@ -110,7 +120,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 527px;
+    min-width: 527px;
     height: 457px;
     grid-column: 2/3;
     margin: 0;

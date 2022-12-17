@@ -11,6 +11,20 @@
   line-height: 16px;
 
   outline: 2px solid rgba(68, 68, 68, 0.1);
+
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 112px;
+  }
+
+  &:hover {
+    outline-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    outline-color: #63d1bb;
+  }
 }
 
 .size-item__control-input:checked ~ .size-item__control-mark {
