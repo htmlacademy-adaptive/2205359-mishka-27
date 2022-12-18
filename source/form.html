@@ -17,8 +17,11 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo logo" href="index.html">
-        <img class="logo__image logo__image--mobile" src="img/mishka-logo-mobile.svg" width="86" height="35"
-          alt="Магазин Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" alt="Магазин Мишка">
+        </picture>
       </a>
       <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button">
         <span class="visually-hidden">Показать меню.</span>

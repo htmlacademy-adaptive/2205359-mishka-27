@@ -17,8 +17,11 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo logo" href="#">
-        <img class="logo__image logo__image--mobile" src="img/mishka-logo-mobile.svg" width="86" height="35"
-          alt="Магазин Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" alt="Магазин Мишка">
+        </picture>
       </a>
       <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button">
         <span class="visually-hidden">Показать меню.</span>
@@ -140,9 +143,12 @@
           </dl>
           <div class="promo__illustration">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/img-index/knitted-bag-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="img/img-index/knitted-bag-tablet.jpg">
-              <img class="promo__image" src="img/img-index/knitted-bag.jpg" alt="Вязаные корзинки">
+              <source media="(min-width: 1150px)"
+                srcset="img/img-index/knitted-bag-desktop.jpg 1x, img/img-index/knitted-bag-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/img-index/knitted-bag-tablet.jpg 1x, img/img-index/knitted-bag-tablet@2x.jpg 2x">
+              <img class="promo__image" src="img/img-index/knitted-bag.jpg" srcset="img/img-index/knitted-bag@2x.jpg 2x"
+                alt="Вязаные корзинки">
             </picture>
           </div>
           <b class="promo__price">Цена: 990 руб.</b>
@@ -151,15 +157,19 @@
       </div>
     </section>
     <section class="advantages">
-      <h2 class="advantages__title title">Коротко о нас:</h2>
-      <ul class="advantages__list advantages-list list">
-        <li class="advantages-list__item advantages-list__item--material">Экологически <br>чистые материалы</li>
-        <li class="advantages-list__item advantages-list__item--style">Скандинавский стиль <br>по российской цене</li>
-        <li class="advantages-list__item advantages-list__item--likes">Увеличивает лайки <br>на фотографиях</li>
-        <li class="advantages-list__item advantages-list__item--handmade">Связано вручную <br>с любовью и умилением</li>
-        <li class="advantages-list__item advantages-list__item--native">Поддержка отечественного <br>производителя</li>
-        <li class="advantages-list__item advantages-list__item--package">Поставляется <br>в подарочной упаковке</li>
-      </ul>
+      <div class="advantages__wrapper">
+        <h2 class="advantages__title title">Коротко о нас:</h2>
+        <ul class="advantages__list advantages-list list">
+          <li class="advantages-list__item advantages-list__item--material">Экологически <br>чистые материалы</li>
+          <li class="advantages-list__item advantages-list__item--style">Скандинавский стиль <br>по российской цене</li>
+          <li class="advantages-list__item advantages-list__item--likes">Увеличивает лайки <br>на фотографиях</li>
+          <li class="advantages-list__item advantages-list__item--handmade">Связано вручную <br>с любовью и умилением
+          </li>
+          <li class="advantages-list__item advantages-list__item--native">Поддержка отечественного <br>производителя
+          </li>
+          <li class="advantages-list__item advantages-list__item--package">Поставляется <br>в подарочной упаковке</li>
+        </ul>
+      </div>
     </section>
     <section class="feedback">
       <h2 class="feedback__title title">Отзывы</h2>

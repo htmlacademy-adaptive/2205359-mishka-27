@@ -35,11 +35,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    left: 50%;
+    left: calc(50% - 75px);
     right: 50%;
 
     display: block;
     width: 149px;
+    height: 100%;
+    padding-top: 4px;
     margin: 0;
   }
 }
@@ -47,6 +49,16 @@
 .page-header__logo {
   width: 85px;
   height: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 136px;
+    height: 65px;
+  }
 }
 
 .page-header__toggle {
