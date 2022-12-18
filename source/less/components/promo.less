@@ -4,12 +4,15 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 39px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     &::after {
       position: absolute;
       content: "";
+      left: 0;
 
-      width: 100%;
+      width: 100vw;
       height: 17px;
 
       background: url("../img/img-index/zigzag-line-tablet.svg");
@@ -18,6 +21,9 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 54px;
+    padding-left: 82px;
+    width: calc(100vw - 132px);
+    box-sizing: border-box;
 
     &::after {
       left: 50px;
@@ -33,30 +39,40 @@
   margin-right: 30px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 50px;
-    margin-right: 50px;
+    position: relative;
+
+    margin: 0 auto;
+    width: fit-content;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 225px;
+    margin: 0;
+    width: 100%;
   }
 }
 
 .promo__title-wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 37px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 61px;
+    flex-direction: row-reverse;
+    gap: 43px;
+    justify-content: flex-end;
+    width: fit-content;
   }
 }
 
 .promo__title {
   margin-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .promo__subtitle {
@@ -72,6 +88,7 @@
   @media (min-width: @tablet-width) {
     width: 100px;
     margin: 0;
+    margin-left: 143px;
 
     font-size: 17px;
     line-height: 17px;
@@ -79,8 +96,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    left: 82px;
+    margin: 0;
   }
 }
 
@@ -89,6 +105,10 @@
     display: flex;
     flex-direction: column;
     width: 292px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 143px;
   }
 }
 
@@ -101,7 +121,7 @@
   color: #444444;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 34px;
 
     font-size: 17px;
     line-height: 30px;
@@ -132,9 +152,22 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    right: 50px;
-    order: 2;
+    left: 53%;
+    bottom: 25px;
   }
+
+  @media (min-width: @desktop-width) {
+    left: 42vw;
+    bottom: 27px;
+    z-index: -1;
+  }
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
+
+  object-fit: contain;
 }
 
 .promo__price {

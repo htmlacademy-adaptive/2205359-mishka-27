@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Academy: Мишка</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon-32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/icon-152.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Мишка</title>
 </head>
 
 <body class="page__body">
@@ -134,8 +138,13 @@
               <dd class="product-details__parameter">15 см</dd>
             </div>
           </dl>
-          <img class="promo__illustration" src="img/img-index/knitted-bag.jpg" width="260" height="315"
-            alt="Вязаные корзинки">
+          <div class="promo__illustration">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/img-index/knitted-bag-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/img-index/knitted-bag-tablet.jpg">
+              <img class="promo__image" src="img/img-index/knitted-bag.jpg" alt="Вязаные корзинки">
+            </picture>
+          </div>
           <b class="promo__price">Цена: 990 руб.</b>
           <a class="promo__button button button--primary" href="#">Заказать</a>
         </div>
