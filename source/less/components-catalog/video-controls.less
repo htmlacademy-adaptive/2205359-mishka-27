@@ -13,11 +13,23 @@
 
   background: url("../img/img-catalog/play-button.svg") no-repeat;
 
+  @media (min-width: @tablet-width) {
+    top: 189px;
+    left: 283px;
+  }
+
   &:hover {
     transform: scale(1.2);
+    transition: transform, 0.1s;
   }
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.video-controls__clip {
+  display: block;
+  width: 100%;
+  height: auto;
 }

@@ -2,8 +2,13 @@
   width: 100%;
 
   background: url("../img/img-index/intro-background.jpg") no-repeat center -22px;
-  background-size: 568px 373px;
+  background-size: 568px auto;
   background-color: #f9f9f9;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/img-index/intro-background@2x.jpg");
+    background-size: 320px auto;
+  }
 
   @media (min-width: @tablet-width) {
     min-height: 700px;
@@ -14,6 +19,10 @@
     background: url("../img/img-index/intro-desktop.jpg") no-repeat center top;
     background-color: #f9f9f9;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-index/intro-desktop@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {

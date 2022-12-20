@@ -5,16 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon-32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/icon-152.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Мишка</title>
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo logo" href="index.html">
-        <img class="logo__image logo__image--mobile" src="img/mishka-logo-mobile.svg" width="86" height="35"
-          alt="Магазин Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" alt="Магазин Мишка">
+        </picture>
       </a>
       <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button">
         <span class="visually-hidden">Показать меню.</span>
@@ -74,8 +81,14 @@
       <ul class="catalog__list products-list list">
         <li class="products-list__item catalog-item">
           <a class="catalog-item__image link">
-            <img class="catalog-item__illustration" src="img/img-catalog/product-bunny.jpg" width="260" height="195"
-              alt="Зайчик-попрыгайчик">
+            <picture>
+              <source media="(min-width: 1150px)" width="316" height="462"
+                srcset="img/img-catalog/product-bunny-desktop.jpg 1x, img/img-catalog/product-bunny-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="334" height="334"
+                srcset="img/img-catalog/product-bunny-tablet.jpg 1x, img/img-catalog/product-bunny-tablet@2x.jpg 2x">
+              <img class="catalog-item__illustration" src="img/img-catalog/product-bunny.jpg"
+                srcset="img/img-catalog/product-bunny@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик">
+            </picture>
           </a>
           <div class="catalog-item__wrapper">
             <h3 class="catalog-item__title">
@@ -97,8 +110,14 @@
         </li>
         <li class="products-list__item catalog-item">
           <a class="catalog-item__image link">
-            <img class="catalog-item__illustration" src="img/img-catalog/laundry-basket.jpg" width="260" height="195"
-              alt="Корзинка для белья">
+            <picture>
+              <source media="(min-width: 1150px)" width="316" height="462"
+                srcset="img/img-catalog/laundry-basket-desktop.jpg 1x, img/img-catalog/laundry-basket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="334" height="334"
+                srcset="img/img-catalog/laundry-basket-tablet.jpg 1x, img/img-catalog/laundry-basket-tablet@2x.jpg 2x">
+              <img class="catalog-item__illustration" src="img/img-catalog/laundry-basket.jpg"
+                srcset="img/img-catalog/laundry-basket@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
+            </picture>
           </a>
           <div class="catalog-item__wrapper">
             <h3 class="catalog-item__title">
@@ -120,8 +139,15 @@
         </li>
         <li class="products-list__item catalog-item">
           <a class="catalog-item__image link">
-            <img class="catalog-item__illustration" src="img/img-catalog/toy-basket.jpg" width="260" height="195"
-              alt="Большая корзинка для игрушек">
+            <picture>
+              <source media="(min-width: 1150px)" width="316" height="462"
+                srcset="img/img-catalog/toy-basket-desktop.jpg 1x, img/img-catalog/toy-basket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="334" height="334"
+                srcset="img/img-catalog/toy-basket-tablet.jpg 1x, img/img-catalog/toy-basket-tablet@2x.jpg 2x">
+              <img class="catalog-item__illustration" src="img/img-catalog/toy-basket.jpg"
+                srcset="img/img-catalog/toy-basket@2x.jpg 2x" width="260" height="195"
+                alt="Большая корзинка для игрушек">
+            </picture>
           </a>
           <div class="catalog-item__wrapper">
             <h3 class="catalog-item__title">
@@ -147,8 +173,12 @@
       <div class="production__wrapper">
         <h2 class="production__title title">Процесс производства</h2>
         <div class="production__video video-controls">
-          <img class="video-controls__clip" src="img/img-catalog/video-mobile.jpg" width="260" height="150"
-            alt="Производство наших изделий.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/img-catalog/video-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/img-catalog/video-tablet.jpg">
+            <img class="video-controls__clip" src="img/img-catalog/video-mobile.jpg" width="260" height="150"
+              alt="Производство наших изделий.">
+          </picture>
           <button class="video-controls__button button">
             <svg width="101" height="77" viewBox="0 0 101 77" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
