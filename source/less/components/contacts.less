@@ -19,6 +19,8 @@
 }
 
 .contacts__wrapper {
+  position: relative;
+
   padding-right: 30px;
   padding-left: 29px;
   margin-bottom: 62px;
@@ -45,7 +47,29 @@
   margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
+    position: relative;
+
     margin-bottom: 49px;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      position: absolute;
+      right: 0;
+
+      width: 47px;
+      height: 81px;
+
+      background: url("../img/img-index/contacts-flag.svg") no-repeat;
+
+      content: "";
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      left: -111px;
+    }
   }
 }
 
