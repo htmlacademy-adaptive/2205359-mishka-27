@@ -11,6 +11,8 @@
   }
 
   @media (min-width: @tablet-width) {
+    position: relative;
+
     min-height: 746px;
     display: flex;
     flex-direction: column;
@@ -20,6 +22,22 @@
     background-color: #f9f9f9;
     background-size: 1150px;
 
+    &::after {
+      position: absolute;
+      top: 98%;
+      left: 0;
+
+      width: 100%;
+      min-width: 768px;
+      height: 24px;
+
+      background-image: url("../../img/zigzag/zigzag-tablet.svg");
+      background-position: center;
+      background-size: contain;
+
+      content: "";
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/img-index/intro-desktop@2x.jpg");
     }
@@ -28,8 +46,15 @@
   @media (min-width: @desktop-width) {
     min-height: 746px;
     background-size: contain;
+
+    &::after {
+      height: 34px;
+
+      background-image: url("../../img/zigzag/zigzag-desktop.svg");
+    }
   }
 }
+
 
 .intro__wrapper {
   padding: 73px 30px 120px 30px;
