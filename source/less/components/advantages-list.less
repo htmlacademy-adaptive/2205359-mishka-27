@@ -9,12 +9,19 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
+    grid-auto-flow: column dense;
     grid-template-columns: 1fr 1fr;
-    column-gap: 70px;
+    grid-template-rows: auto auto auto;
+    column-gap: 41px;
+    row-gap: 111px;
     width: fit-content;
 
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 58px;
   }
 }
 

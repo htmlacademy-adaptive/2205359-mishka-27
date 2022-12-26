@@ -17,6 +17,7 @@
 .form-input {
   width: 100%;
   padding-right: 9px;
+  box-sizing: border-box;
 
   font-size: 19px;
   line-height: 18px;
@@ -26,6 +27,7 @@
   background-color: transparent;
 
   &::placeholder {
+    font-family: "Open Sans", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
@@ -41,5 +43,14 @@
   &:focus,
   &:focus-visible {
     outline: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 18px;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 }

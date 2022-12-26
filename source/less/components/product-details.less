@@ -5,13 +5,24 @@
 }
 
 .product-details__column {
-  display: grid;
-  grid-template-columns: 1fr 2.5fr;
-  min-height: 40px;
-  align-items: center;
-  gap: 20px;
+  position: relative;
 
-  border-bottom: 1px solid #ececec;
+  display: grid;
+  grid-template-columns: 69px 1fr;
+  min-height: 40px;
+  gap: 30px;
+
+  &::after {
+    position: absolute;
+    bottom: 6px;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #ececec;
+
+    content: "";
+  }
 }
 
 .product-details__parameter {

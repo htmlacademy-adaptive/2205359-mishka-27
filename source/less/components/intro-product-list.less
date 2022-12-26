@@ -16,8 +16,8 @@
 
     &::after {
       position: absolute;
-      top: 84%;
-      right: -39px;
+      top: 90%;
+      right: -48px;
       content: "";
 
       width: 100vw;
@@ -28,6 +28,17 @@
       background-position: center;
       background-size: contain;
       background-color: transparent;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      top: 85%;
+
+      right: -50px;
+      height: 34px;
+
+      background-image: url("../img/img-index/zigzag-desktop.svg");
     }
   }
 }
@@ -41,8 +52,7 @@
 .intro-product-list__link {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 24px 36px 31px 30px;
+  padding: 23px 36px 19px 30px;
   height: 100%;
   box-sizing: border-box;
 

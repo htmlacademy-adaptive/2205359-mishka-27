@@ -4,7 +4,7 @@
   @media (min-width: @tablet-width) {
     position: relative;
 
-    padding: 82px 50px 0 50px;
+    padding: 78px 50px 0 50px;
     min-height: 457px;
     box-sizing: border-box;
     display: grid;
@@ -34,6 +34,7 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 224px;
+    padding-top: 71px;
     background-position: 50px;
 
     &::after {
@@ -41,6 +42,9 @@
       right: 50px;
 
       width: calc(100% - 100px);
+      height: 23px;
+
+      background-image: url("../img/img-index/zigzag-line-desktop.svg");
     }
   }
 }
@@ -50,6 +54,11 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 38px;
+    margin-top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 35px;
   }
 }
 

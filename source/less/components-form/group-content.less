@@ -17,6 +17,17 @@
 .group-content__input {
   .form-input();
 
-  padding-bottom: 17px;
-  padding-top: 15px;
+  padding-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 9px;
+    padding-bottom: 12px;
+  }
+}
+
+.group-content__label {
+  @media (min-width: @tablet-width) {
+    align-self: start;
+    margin-top: 10px;
+  }
 }
