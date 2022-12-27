@@ -18,7 +18,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding: 0 111px 49px;
+      padding: 0 111px 45px;
     }
   }
 
@@ -38,7 +38,11 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding: 45px 111px 52px;
+      padding: 49px 111px 48px;
+
+      .form-group__inner {
+        column-gap: 25px;
+      }
     }
   }
 
@@ -59,7 +63,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding: 54px 111px 50px;
+      padding: 57px 111px 50px;
       margin-bottom: 0;
       margin-right: 115px;
     }
@@ -73,7 +77,7 @@
     }
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 25px;
+      margin-bottom: 21px;
     }
 
     @media (min-width: @desktop-width) {
@@ -86,6 +90,10 @@
 
     .form-group__title {
       margin-bottom: 20px;
+
+      @media (min-width: @tablet-width) {
+        margin-bottom: 0;
+      }
     }
 
     @media (min-width: @tablet-width) {
@@ -103,11 +111,11 @@
     }
 
     @media (min-width: @tablet-width) {
-      padding: 46px 50px 47px;
+      padding: 50px 50px 49px;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 50px 111px 49px;
+      padding: 50px 111px 51px;
       margin-right: 115px;
     }
   }
@@ -125,7 +133,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    column-gap: 24px;
+    column-gap: 28px;
   }
 }
 
@@ -197,9 +205,10 @@
     }
 
     @media (min-width: @desktop-width) {
-      grid-template-columns: repeat(3, max-content);
+      grid-template-columns: repeat(3, 165px);
       column-gap: 99px;
-      row-gap: 22px;
+      row-gap: 23px;
+      margin-top: 1px;
     }
   }
 
@@ -232,7 +241,7 @@
   fill: rgba(0, 0, 0, 0.2);
 
   @media (min-width: @tablet-width) {
-    top: 14px;
+    top: 17px;
     left: 92%;
   }
 
@@ -257,7 +266,7 @@
     padding-bottom: 11px;
 
     @media (min-width: @tablet-width) {
-      padding-top: 4px;
+      padding-top: 15px;
       padding-bottom: 16px;
     }
   }
