@@ -18,12 +18,20 @@
     left: 283px;
   }
 
+  @media (min-width: @desktop-width) {
+    top: 190px;
+    left: 292px;
+  }
+
   &:hover {
     transform: scale(1.2);
     transition: transform, 0.1s;
   }
 
   &:active {
+    transform: scale(0.8);
+    transition: transform, 0.1s;
+
     opacity: 0.3;
   }
 }

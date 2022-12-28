@@ -8,16 +8,17 @@
     margin-bottom: 31px;
 
     .form-group__title {
-      margin-bottom: 30px;
+      margin-bottom: 33px;
     }
 
     @media (min-width: @tablet-width) {
       margin: 0;
       padding: 50px;
+      padding-top: 0;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 0 97px 49px;
+      padding: 0 111px 45px;
     }
   }
 
@@ -31,12 +32,17 @@
     @media (min-width: @tablet-width) {
       margin: 0;
       padding: 50px;
+      padding-top: 46px;
 
       background-color: #f1f1f1;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 48px 97px 52px;
+      padding: 49px 111px 48px;
+
+      .form-group__inner {
+        column-gap: 25px;
+      }
     }
   }
 
@@ -45,16 +51,21 @@
 
     .form-group__title {
       margin-bottom: 29px;
+
+      @media (min-width: @tablet-width) {
+        margin-top: 11px;
+      }
     }
 
     @media (min-width: @tablet-width) {
-      padding: 66px 50px 50px;
+      padding: 54px 50px 50px;
       margin-bottom: 0;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 66px 97px 50px;
+      padding: 57px 111px 50px;
       margin-bottom: 0;
+      margin-right: 115px;
     }
   }
 
@@ -66,19 +77,31 @@
     }
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 41px;
+      margin-bottom: 21px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 115px;
     }
   }
 
   &--mail {
-    margin-bottom: 34px;
+    margin-bottom: 35px;
 
     .form-group__title {
       margin-bottom: 20px;
+
+      @media (min-width: @tablet-width) {
+        margin-bottom: 0;
+      }
     }
 
     @media (min-width: @tablet-width) {
       margin-bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 115px;
     }
   }
 
@@ -88,11 +111,12 @@
     }
 
     @media (min-width: @tablet-width) {
-      padding: 50px 50px 63px;
+      padding: 50px 50px 49px;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 50px 97px 49px;
+      padding: 50px 111px 51px;
+      margin-right: 115px;
     }
   }
 }
@@ -109,7 +133,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    column-gap: 40px;
+    column-gap: 28px;
   }
 }
 
@@ -128,8 +152,9 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    align-self: start;
     width: max-content;
-    margin-top: 12px;
+    margin-top: 20px;
   }
 
   &::after {
@@ -162,7 +187,11 @@
   }
 
   &--type {
-    gap: 24px;
+    gap: 9px;
+
+    @media (min-width: @tablet-width) {
+      gap: 22px;
+    }
   }
 
   &--color {
@@ -171,12 +200,15 @@
     @media (min-width: @tablet-width) {
       display: grid;
       grid-template-columns: max-content 1fr;
-      column-gap: 89px;
+      column-gap: 83px;
+      row-gap: 23px;
     }
 
     @media (min-width: @desktop-width) {
-      grid-template-columns: repeat(3, max-content);
-      column-gap: 93px;
+      grid-template-columns: repeat(3, 165px);
+      column-gap: 99px;
+      row-gap: 23px;
+      margin-top: 1px;
     }
   }
 
@@ -184,7 +216,7 @@
     gap: 22px;
 
     @media (min-width: @tablet-width) {
-      gap: 41px;
+      gap: 31px;
     }
   }
 }
@@ -192,25 +224,29 @@
 .form-group__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 17px;
+  gap: 13px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
   }
 }
 
 .form-group__icon {
   position: absolute;
-  left: 90%;
-  top: 43px;
+  left: 87%;
+  top: 34px;
 
   fill: rgba(0, 0, 0, 0.2);
 
   @media (min-width: @tablet-width) {
-    top: 14px;
-    bottom: 15px;
+    top: 17px;
+    left: 92%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 96%;
   }
 }
 
@@ -218,13 +254,21 @@
   .form-input();
 
   &--phone {
-    padding-bottom: 20px;
-    padding-top: 15px;
+    padding-bottom: 13px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 16px;
+      padding-top: 17px;
+    }
   }
 
   &--mail {
-    padding-bottom: 18px;
-    padding-top: 15px;
+    padding-bottom: 11px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 15px;
+      padding-bottom: 16px;
+    }
   }
 
   &:hover ~ .form-group__icon,
@@ -252,6 +296,11 @@
     font-size: 17px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 
   &:hover,

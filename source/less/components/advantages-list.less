@@ -9,12 +9,19 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
+    grid-auto-flow: column dense;
     grid-template-columns: 1fr 1fr;
-    column-gap: 70px;
+    grid-template-rows: auto auto auto;
+    column-gap: 41px;
+    row-gap: 111px;
     width: fit-content;
 
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 58px;
   }
 }
 
@@ -38,6 +45,10 @@
     width: 33px;
     height: 38px;
     background: url("../img/img-index/advantages-icons/eco.svg");
+
+    @media (min-width: @tablet-width) {
+      bottom: 62px;
+    }
   }
 
   &--style::before {
@@ -46,6 +57,10 @@
     width: 47px;
     height: 27px;
     background: url("../img/img-index/advantages-icons/style.svg");
+
+    @media (min-width: @tablet-width) {
+      bottom: 71px;
+    }
   }
 
   &--likes::before {
@@ -55,6 +70,10 @@
     width: 34px;
     height: 27px;
     background: url("../img/img-index/advantages-icons/likes.svg");
+
+    @media (min-width: @tablet-width) {
+      bottom: 67px;
+    }
   }
 
   &--handmade::before {
@@ -64,6 +83,10 @@
     width: 35px;
     height: 34px;
     background: url("../img/img-index/advantages-icons/handmade.svg");
+
+    @media (min-width: @tablet-width) {
+      bottom: 63px;
+    }
   }
 
   &--native::before {
@@ -73,6 +96,10 @@
     width: 55px;
     height: 23px;
     background: url("../img/img-index/advantages-icons/native.svg");
+
+    @media (min-width: @tablet-width) {
+      bottom: 73px;
+    }
   }
 
   &--package::before {
@@ -82,5 +109,9 @@
     width: 33px;
     height: 32px;
     background: url("../img/img-index/advantages-icons/gift.svg");
+
+    @media (min-width: @tablet-width) {
+      bottom: 66px;
+    }
   }
 }

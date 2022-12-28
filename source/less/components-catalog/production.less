@@ -1,10 +1,14 @@
 .production {
   padding-right: 30px;
   padding-left: 30px;
-  padding-bottom: 58px;
+  padding-bottom: 60px;
 
   @media (min-width: @tablet-width) {
     padding: 0 50px 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 104px;
   }
 }
 
@@ -68,8 +72,8 @@
     line-height: 24px;
 
     &::before {
-      top: 0;
-      left: -77px;
+      top: -3px;
+      left: -66px;
     }
   }
 
@@ -104,6 +108,8 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 24px;
+    padding-left: 29px;
+    padding-right: 37px;
   }
 
   @media (min-width: @desktop-width) {
@@ -122,12 +128,20 @@
   @media (min-width: @tablet-width) {
     font-size: 15px;
     line-height: 30px;
+    margin-left: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-bottom: 53px;
   }
 }
 
 .production__button {
-  width: 100%;
-  margin-bottom: 33px;
+  width: 192px;
+  margin: auto;
+  margin-bottom: 32px;
+  padding-bottom: 13px;
 
   @media (min-width: @tablet-width) {
     margin: auto;
