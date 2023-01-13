@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon-32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/icon-152.png">
@@ -18,9 +20,10 @@
     <div class="page-header__wrapper">
       <a class="page-header__logo logo" href="index.html">
         <picture>
-          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
-          <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" alt="Магазин Мишка">
+          <source media="(min-width: 1150px)" width="149" height="72" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" width="113" height="46" srcset="img/mishka-logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
+            alt="Магазин Мишка">
         </picture>
       </a>
       <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button">

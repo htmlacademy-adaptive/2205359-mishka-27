@@ -192,6 +192,16 @@
   margin: 0 auto;
 
   object-fit: contain;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+    height: auto;
+  }
 }
 
 .promo__price {
