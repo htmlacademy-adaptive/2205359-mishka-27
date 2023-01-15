@@ -126,13 +126,17 @@
 
 .promo__details-wrapper {
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
-    width: 292px;
+    position: relative;
+
+    display: grid;
+    column-gap: 42px;
+    grid-template-columns: 292px 334px;
+    grid-template-rows: repeat(4, auto);
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 143px;
+    column-gap: 57px;
   }
 }
 
@@ -162,6 +166,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 49px;
+    grid-row: 2/3;
   }
 
   @media (min-width: @desktop-width) {
@@ -177,14 +182,15 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    left: 50%;
-    bottom: 29px;
+
+    grid-column: 2/3;
+    grid-row: 1/4;
+    margin-top: 10px;
   }
 
   @media (min-width: @desktop-width) {
-    left: 495px;
-    bottom: 30px;
     z-index: -1;
+    top: -164px;
   }
 }
 
@@ -216,6 +222,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 33px;
+    grid-column: 1/2;
 
     font-size: 20px;
   }
@@ -227,5 +234,6 @@
   @media (min-width: @tablet-width) {
     width: 292px;
     margin-bottom: 52px;
+    grid-column: 1/2;
   }
 }
