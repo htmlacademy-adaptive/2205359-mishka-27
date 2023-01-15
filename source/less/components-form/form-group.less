@@ -153,7 +153,6 @@
   @media (min-width: @tablet-width) {
     display: block;
     align-self: start;
-    width: max-content;
     margin-top: 20px;
   }
 
@@ -223,6 +222,7 @@
 
 .form-group__content {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 13px;
 
@@ -236,7 +236,7 @@
 .form-group__icon {
   position: absolute;
   left: 87%;
-  top: 34px;
+  bottom: 15px;
 
   fill: rgba(0, 0, 0, 0.2);
 

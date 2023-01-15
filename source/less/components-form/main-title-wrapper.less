@@ -7,33 +7,15 @@
   @media (min-width: @tablet-width) {
     position: relative;
 
-    padding-top: 101px;
+    padding-top: 37px;
     padding-bottom: 89px;
 
-    &::after {
-      position: absolute;
-      top: 90%;
-      right: 0;
-      content: "";
-
-      width: 100%;
-      min-width: 768px;
-      height: 24px;
-
-      background-image: url("../img/img-index/zigzag.svg");
-      background-position: center;
-      background-size: contain;
-      background-color: transparent;
-    }
+    background: url("../img/img-index/zigzag.svg") bottom no-repeat #f1f1f1;
+    background-size: contain;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 102px;
-    padding-bottom: 95px;
-
-    &::after {
-      height: 34px;
-      top: 92%;
-    }
+    padding-top: 38px;
+    padding-bottom: 114px;
   }
 }
