@@ -19,6 +19,7 @@
 
     @media (min-width: @desktop-width) {
       padding: 0 111px 45px;
+      margin-right: 115px;
     }
   }
 
@@ -38,7 +39,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding: 49px 111px 48px;
+      padding: 49px 226px 48px 111px;
 
       .form-group__inner {
         column-gap: 25px;
@@ -134,6 +135,8 @@
 
   @media (min-width: @desktop-width) {
     column-gap: 28px;
+    max-width: 1450px;
+    margin: 0 auto;
   }
 }
 
@@ -153,7 +156,6 @@
   @media (min-width: @tablet-width) {
     display: block;
     align-self: start;
-    width: max-content;
     margin-top: 20px;
   }
 
@@ -223,6 +225,7 @@
 
 .form-group__content {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 13px;
 
@@ -236,7 +239,7 @@
 .form-group__icon {
   position: absolute;
   left: 87%;
-  top: 34px;
+  bottom: 15px;
 
   fill: rgba(0, 0, 0, 0.2);
 
