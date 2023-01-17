@@ -190,6 +190,14 @@
       content: none;
     }
   }
+
+  &--mail::after {
+    width: calc(100% - 77px);
+  }
+
+  @media (min-width: @tablet-width) {
+    content: none;
+  }
 }
 
 .form-group__list {
@@ -316,7 +324,7 @@
   resize: none;
 
   &::placeholder {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
