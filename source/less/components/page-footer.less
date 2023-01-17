@@ -1,4 +1,6 @@
 .page-footer {
+  position: relative;
+
   padding-top: 27px;
   padding-bottom: 23px;
 
@@ -17,7 +19,22 @@
 }
 
 .page-footer__social-list {
+  position: relative;
+
   margin-bottom: 53px;
+
+  &::after {
+    position: absolute;
+    bottom: -31px;
+    left: 30px;
+    right: 30px;
+
+    width: calc(100% - 60px);
+    height: 1px;
+    background-color: #e5e5e5;
+
+    content: "";
+  }
 
   @media (min-width: @tablet-width) {
     margin: 0;
