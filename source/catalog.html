@@ -81,7 +81,7 @@
       <h2 class="visually-hidden">Наши продукты.</h2>
       <ul class="catalog__list products-list list">
         <li class="products-list__item catalog-item catalog-item--bunny">
-          <a class="catalog-item__image link">
+          <a class="catalog-item__image link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1150px)" width="316" height="462"
                 srcset="img/img-catalog/product-bunny-desktop.webp 1x, img/img-catalog/product-bunny-desktop@2x.webp 2x">
@@ -104,7 +104,7 @@
             <p class="catalog-item__details">Рост 30 см, вес 200 г</p>
             <div class="catalog-item__buy-wrapper">
               <b class="catalog-item__price">1 200 руб.</b>
-              <button class="catalog-item__button button">
+              <button class="catalog-item__button cart-button button">
                 <svg class="catalog-item__cart" width="21" height="18" viewBox="0 0 21 18" fill="none">
                   <use href="img/sprite.svg#catalog-cart" />
                 </svg>
@@ -114,7 +114,7 @@
           </div>
         </li>
         <li class="products-list__item catalog-item catalog-item--basket">
-          <a class="catalog-item__image link">
+          <a class="catalog-item__image link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1150px)"
                 srcset="img/img-catalog/laundry-basket-desktop.webp 1x, img/img-catalog/laundry-basket-desktop@2x.webp 2x">
@@ -137,7 +137,7 @@
             <p class="catalog-item__details">Диаметр 15 см, высота 10 см</p>
             <div class="catalog-item__buy-wrapper">
               <b class="catalog-item__price">690 руб.</b>
-              <button class="catalog-item__button button">
+              <button class="catalog-item__button cart-button button">
                 <svg class="catalog-item__cart" width="21" height="18" viewBox="0 0 21 18" fill="none">
                   <use href="img/sprite.svg#catalog-cart" />
                 </svg>
@@ -147,7 +147,7 @@
           </div>
         </li>
         <li class="products-list__item catalog-item catalog-item--toy-basket">
-          <a class="catalog-item__image link">
+          <a class="catalog-item__image link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1150px)"
                 srcset="img/img-catalog/toy-basket-desktop.webp 1x, img/img-catalog/toy-basket-desktop@2x.webp 2x">
@@ -171,7 +171,7 @@
             <p class="catalog-item__details">Диаметр 30 см, высота 30 см</p>
             <div class="catalog-item__buy-wrapper">
               <b class="catalog-item__price">1 500 руб.</b>
-              <button class="catalog-item__button button">
+              <button class="catalog-item__button cart-button button">
                 <svg class="catalog-item__cart" width="21" height="18" viewBox="0 0 21 18" fill="none">
                   <use href="img/sprite.svg#catalog-cart" />
                 </svg>
@@ -252,7 +252,7 @@
     </a>
   </footer>
 
-  <dialog class="modal modal--closed">
+  <dialog class="modal">
     <div class="modal__wrapper">
       <section class="modal__content">
         <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
@@ -260,20 +260,19 @@
         <form class="modal__form modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <ul class="modal-form__options size-options-list list">
             <li class="size-options-list__item size-item">
-              <label class="size-item__control">
-                <input class="size-item__control-input visually-hidden" type="radio" name="size" id="S" value="S"
-                  checked>
+              <label class="size-item__control" tabindex="1">
+                <input class="size-item__control-input visually-hidden" type="radio" name="size" id="S" value="S" checked>
                 <span class="size-item__control-mark">S</span>
               </label>
             </li>
             <li class="size-options-list__item size-item">
-              <label class="size-item__control">
+              <label class="size-item__control" tabindex="2">
                 <input class="size-item__control-input visually-hidden" type="radio" name="size" id="M" value="M">
                 <span class="size-item__control-mark">M</span>
               </label>
             </li>
             <li class="size-options-list__item size-item">
-              <label class="size-item__control">
+              <label class="size-item__control" tabindex="3">
                 <input class="size-item__control-input visually-hidden" type="radio" name="size" id="L" value="L">
                 <span class="size-item__control-mark">L</span>
               </label>
@@ -284,7 +283,7 @@
       </section>
     </div>
   </dialog>
-  <script src="js/navigation-toggle.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

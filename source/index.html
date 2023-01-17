@@ -50,7 +50,7 @@
           </a>
         </li>
         <li class="header-navigation__item header-navigation__item--cart">
-          <a class="header-navigation__link header-navigation__link--cart link" href="#">
+          <a class="header-navigation__link header-navigation__link--cart cart-button link" href="#">
             <svg class="header-navigation__icon header-navigation__icon--cart" width="21" height="18"
               viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#cart" />
@@ -82,7 +82,7 @@
       </div>
       <ul class="intro__product-list intro-product-list list">
         <li class="intro-product-list__item">
-          <a class="intro-product-list__link link">
+          <a class="intro-product-list__link link" href="#">
             <span class="intro-product-list__name">Предметы <br>интерьера</span>
             <svg class="intro-product-list__image" width="40" height="62" viewBox="0 0 40 62" fill="none">
               <use href="img/sprite.svg#interior" />
@@ -90,7 +90,7 @@
           </a>
         </li>
         <li class="intro-product-list__item">
-          <a class="intro-product-list__link intro-product-list__link--toys link">
+          <a class="intro-product-list__link intro-product-list__link--toys link" href="#">
             <span class="intro-product-list__name">Детские <br>игрушки</span>
             <svg class="intro-product-list__image" width="60" height="60" viewBox="0 0 60 60" fill="none">
               <use href="img/sprite.svg#toys" />
@@ -209,7 +209,23 @@
           </div>
         </div>
       </div>
-      <iframe class="contacts__map map map--mobile" title="Карта расположения магазина Мишка."
+      <a class="contacts__map-link" href="https://goo.gl/maps/LsfDrgHANTtpxfhn7">
+        <picture>
+          <source type="image/webp" media="(min-width: 1150px)"
+            srcset="img/img-index/map-desktop.webp 1x, img/img-index/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/img-index/map-tablet.webp 1x, img/img-index/map-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/img-index/map-mobile.webp 1x, img/img-index/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)" width="527" height="457"
+            srcset="img/img-index/map-desktop.jpg 1x, img/img-index/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" width="768" height="457"
+            srcset="img/img-index/map-tablet.jpg 1x, img/img-index/map-tablet@2x.jpg 2x">
+          <img class="contacts__map-image" src="img/img-index/map-mobile.jpg" srcset="img/img-index/map-mobile@2x.jpg 2x"
+            width="320" height="454" alt="Карта расположения магазина Мишка">
+        </picture>
+      </a>
+      <iframe class="contacts__map contacts__map--nojs" title="Карта расположения магазина Мишка."
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669638020070!5m2!1sru!2sru"
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
@@ -258,7 +274,11 @@
     </a>
   </footer>
 
-  <dialog class="modal modal--closed">
+<!-- Чтобы открыть модальное окно, нужно нажать на иконку корзины, либо добавить ему класс modal--open -->
+  <dialog class="modal">
+    <button class="modal__overlay">
+      <span class="visually hidden">Закрыть модальное окно.</span>
+    </button>
     <div class="modal__wrapper">
       <section class="modal__content">
         <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
@@ -266,20 +286,19 @@
         <form class="modal__form modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <ul class="modal-form__options size-options-list list">
             <li class="size-options-list__item size-item">
-              <label class="size-item__control">
-                <input class="size-item__control-input visually-hidden" type="radio" name="size" id="S" value="S"
-                  checked>
+              <label class="size-item__control" tabindex="1">
+                <input class="size-item__control-input visually-hidden" type="radio" name="size" id="S" value="S" checked>
                 <span class="size-item__control-mark">S</span>
               </label>
             </li>
             <li class="size-options-list__item size-item">
-              <label class="size-item__control">
+              <label class="size-item__control" tabindex="2">
                 <input class="size-item__control-input visually-hidden" type="radio" name="size" id="M" value="M">
                 <span class="size-item__control-mark">M</span>
               </label>
             </li>
             <li class="size-options-list__item size-item">
-              <label class="size-item__control">
+              <label class="size-item__control" tabindex="3">
                 <input class="size-item__control-input visually-hidden" type="radio" name="size" id="L" value="L">
                 <span class="size-item__control-mark">L</span>
               </label>
@@ -290,7 +309,7 @@
       </section>
     </div>
   </dialog>
-  <script src="js/navigation-toggle.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
