@@ -215,14 +215,14 @@
             srcset="img/img-index/map-desktop.webp 1x, img/img-index/map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
             srcset="img/img-index/map-tablet.webp 1x, img/img-index/map-tablet@2x.webp 2x">
-          <source type="image/webp"
-            srcset="img/img-index/map-mobile.webp 1x, img/img-index/map-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="img/img-index/map-mobile.webp 1x, img/img-index/map-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" width="527" height="457"
             srcset="img/img-index/map-desktop.jpg 1x, img/img-index/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" width="768" height="457"
             srcset="img/img-index/map-tablet.jpg 1x, img/img-index/map-tablet@2x.jpg 2x">
-          <img class="contacts__map-image" src="img/img-index/map-mobile.jpg" srcset="img/img-index/map-mobile@2x.jpg 2x"
-            width="320" height="454" alt="Карта расположения магазина Мишка">
+          <img class="contacts__map-image" src="img/img-index/map-mobile.jpg"
+            srcset="img/img-index/map-mobile@2x.jpg 2x" width="320" height="454"
+            alt="Карта расположения магазина Мишка">
         </picture>
       </a>
       <iframe class="contacts__map contacts__map--nojs" title="Карта расположения магазина Мишка."
@@ -274,7 +274,7 @@
     </a>
   </footer>
 
-<!-- Чтобы открыть модальное окно, нужно нажать на иконку корзины, либо добавить ему класс modal--open -->
+  <!-- Чтобы открыть модальное окно, нужно нажать на иконку корзины, либо добавить ему класс modal--open -->
   <dialog class="modal">
     <button class="modal__overlay">
       <span class="visually hidden">Закрыть модальное окно.</span>
@@ -287,7 +287,8 @@
           <ul class="modal-form__options size-options-list list">
             <li class="size-options-list__item size-item">
               <label class="size-item__control" tabindex="1">
-                <input class="size-item__control-input visually-hidden" type="radio" name="size" id="S" value="S" checked>
+                <input class="size-item__control-input visually-hidden" type="radio" name="size" id="S" value="S"
+                  checked>
                 <span class="size-item__control-mark">S</span>
               </label>
             </li>
