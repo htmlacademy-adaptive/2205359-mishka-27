@@ -1,6 +1,4 @@
 .page-footer {
-  position: relative;
-
   padding-top: 27px;
   padding-bottom: 23px;
 
@@ -34,6 +32,10 @@
     background-color: #e5e5e5;
 
     content: "";
+
+    @media (min-width: @tablet-width) {
+      content: none;
+    }
   }
 
   @media (min-width: @tablet-width) {
