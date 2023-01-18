@@ -1,4 +1,8 @@
 .contacts {
+  width: 100%;
+}
+
+.contacts__inner {
   padding-top: 44px;
   padding-bottom: 37px;
 
@@ -9,14 +13,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 161px;
-    padding-left: 224px;
-    padding-right: 50px;
-    padding-bottom: 105px;
+    width: 1050px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 161px 50px 105px 173px;
     display: grid;
-    grid-template-columns: 39% 1fr;
+    grid-template-columns: 39% 527px;
     grid-template-rows: 1fr min-content;
-    column-gap: 9px;
+    column-gap: 28px;
   }
 }
 

@@ -16,7 +16,6 @@
 
     @media (min-width: @desktop-width) {
       padding: 0 111px 49px;
-      margin-right: 115px;
     }
   }
 
@@ -33,7 +32,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding: 49px 226px 50px 111px;
+      padding: 49px 111px 50px;
 
       .form-group__inner {
         column-gap: 25px;
@@ -58,7 +57,6 @@
     @media (min-width: @desktop-width) {
       padding: 56px 111px 50px;
       margin-bottom: 0;
-      margin-right: 115px;
     }
   }
 
@@ -76,8 +74,10 @@
     }
 
     @media (min-width: @desktop-width) {
-      margin-right: 115px;
-      margin-bottom: 20px;
+      width: 813px;
+      padding-right: 115px;
+      margin: 0 auto;
+      margin-bottom: 10px;
     }
   }
 
@@ -96,7 +96,9 @@
     }
 
     @media (min-width: @desktop-width) {
-      margin-right: 115px;
+      width: 813px;
+      padding-right: 115px;
+      margin: 0 auto;
     }
   }
 
@@ -111,7 +113,6 @@
 
     @media (min-width: @desktop-width) {
       padding: 50px 111px 49px;
-      margin-right: 115px;
     }
   }
 }
@@ -119,16 +120,46 @@
 .form-group__inner {
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    column-gap: 79px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 26px;
+    margin: 0 auto;
+  }
+
   &--type {
     margin-bottom: 31px;
+
+    @media (min-width: @desktop-width) {
+      width: 928px;
+      margin-bottom: 0;
+    }
   }
 
   &--color {
     margin-bottom: 33px;
+
+    @media (min-width: @desktop-width) {
+      width: 928px;
+      margin-bottom: 0;
+    }
   }
 
   &--name {
     margin-bottom: 36px;
+
+    @media (min-width: @desktop-width) {
+      width: 928px;
+      padding-right: 118px;
+      box-sizing: border-box;
+      margin-bottom: 0;
+    }
   }
 
   &--phone {
@@ -143,18 +174,11 @@
     margin-bottom: 35px;
   }
 
-  @media (min-width: @tablet-width) {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 88px 1fr;
-    column-gap: 79px;
-    align-items: center;
-  }
-
-  @media (min-width: @desktop-width) {
-    column-gap: 26px;
-    max-width: 1450px;
-    margin: 0 auto;
+  &--other {
+    @media (min-width: @desktop-width) {
+      width: 813px;
+      padding-right: 115px;
+    }
   }
 }
 
